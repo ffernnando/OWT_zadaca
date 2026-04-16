@@ -1,0 +1,14 @@
+.navigacija {
+    display:flex;
+    background-color: beige;
+    justify-content: space-between;
+    
+}
+body {
+    margin:0;
+}
+.gumbi_navigacije {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
