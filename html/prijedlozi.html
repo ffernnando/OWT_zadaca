@@ -1,1 +1,115 @@
-<h1>Prijedlozi :D</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/fperak24.css">
+  <link rel="stylesheet" href="../css/prijedlozi.css">
+  <title>Prijedlozi</title>
+</head>
+
+<body>
+  <nav class="navigacija">
+    <div id="nav_logo">
+      Dvorci sjeverozapadne Hrvatske
+    </div>
+
+    <section id="nav_gumbi">
+      <a class="nav_gumb" id="pocetna_gumb" href="index.html">
+        Početna
+      </a>
+      <a class="nav_gumb" id="lokaliteti_gumb" href="lokaliteti.html">
+        Lokaliteti
+      </a>
+      <a class="nav_gumb" id="prijedlozi_gumb" href="prijedlozi.html">
+        Prijedlozi
+      </a>
+      <a class="nav_gumb" id="dokumentacija_gumb" href="dokumentacija.html">
+        Dokumentacija
+      </a>
+    </section>
+  </nav>
+  <header>
+    <div id="zatamnjenje">
+      <h1>
+        Prijedlozi
+      </h1>
+    </div>
+  </header>
+  <main>
+    <article>
+      <h2>Pošaljite prijedlog</h2>
+      <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post">
+        <label for="input_naziv">Naziv lokaliteta:</label>
+        <input id="input_naziv" type="text" name="naziv" required><br><br>
+
+        <label for="input_mail">Email:</label>
+        <input id="input_mail" type="email" name="email"><br><br>
+
+        <label for="input_godina">Godina nastanka (otprilike):</label>
+        <input id="input_godina" type="number" name="godina"><br><br>
+
+        <label for="input_datum">Datum posjeta:</label>
+        <input id="input_datum" type="date" name="datum"><br><br>
+
+        <div id="radio_grupa_vrsta">
+          <label>Vrsta objekta:</label><br>
+          <label for="radio_dvorac">Dvorac</label>
+          <input id="radio_dvorac" type="radio" name="vrsta" value="dvorac">
+
+          <label for="radio_kurija">Kurija</label>
+          <input id="radio_kurija" type="radio" name="vrsta" value="kurija">
+
+          <label for="radio_utvrda">Utvrda</label>
+          <input id="radio_utvrda" type="radio" name="vrsta" value="utvrda">
+        </div><br><br>
+
+        <div id="stanje_objekta_grupa">
+          <label>Stanje objekta:</label><br>
+          <label for="check_ocuvan">Očuvan</label>
+          <input id="check_ocuvan" type="checkbox" name="stanje_ocuvan" value="ocuvan">
+
+          <label for="check_rusevan">Ruševan</label>
+          <input id="check_rusevan" type="checkbox" name="stanje_rusevan" value="rusevan">
+
+          <label for="check_obnovljen">Obnovljen</label>
+          <input id="check_obnovljen" type="checkbox" name="stanje_obnovljen" value="obnovljen">
+        </div>
+        <br><br>
+
+        <label for="odabir_lokacija">Lokacija:</label>
+        <select id="odabir_lokacija" name="lokacija">
+          <option value="varazdin">Varaždin</option>
+          <option value="ivanec">Ivanec</option>
+          <option value="lepoglava">Lepoglava</option>
+        </select><br><br>
+
+        <label for="tekst_opis">Opis:</label><br>
+        <textarea id="tekst_opis" name="opis"></textarea><br><br>
+
+        <label for="input_slika">Slika lokaliteta:</label>
+        <input id="input_slika" type="file" name="datoteka"><br><br>
+
+        <label for="tekst_koordinate">Koordinate:</label>
+        <input id="tekst_koordinate" type="text" name="koordinate"><br><br>
+
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Resetiraj">
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://creativecommons.org/public-domain/cc0/" target="_blank">&copy</a> 2026 Dvorci i kurije
+      sjeverozapadne Hrvatske | Kontakt: <a href="mailto:fperak24@student.foi.hr"> fperak24@student.foi.hr </a>
+    </p>
+    <p>
+      <a href="./dokumentacija.html">Dokumentacija</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.navbar {
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p,
+.list-group-item {
+  font-size: 1em;
+}
+
+footer,
+footer p {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p,
+  .list-group-item {
+    font-size: 0.95em;
+  }
+
+  footer,
+  footer p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p,
+  .list-group-item {
+    font-size: 0.9em;
+  }
+
+  footer,
+  footer p {
+    font-size: 0.8em;
+  }
+
+}
