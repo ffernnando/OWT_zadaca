@@ -4,160 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../css/fperak24.css"> -->
-    <title>Početna stranica</title>
-    <style>
-        /* Responzivno za računalo (default), tablet () i mobitel () */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* ---------------------------- NAVIGACIJA ---------------------------- */
-        /* DODAJ RESPONZIVNO ZA NAVIGACIJU - AKO JE PREUSKI DISPLAY - OSTAJE NAVBAR S LOGOTIPOM I NEKAKVA IKONICA ZA KAO OTVARANJE MENIJA! */
-
-        .navigacija {
-            display: flex;
-            justify-content: space-between;
-            background-color: #3B2618;
-            color: #D2B07A;
-            min-height: 2em;
-            font-size: larger;
-            padding: 0.25em;
-        }
-
-        #nav_logo {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            margin: auto 1em;
-        }
-
-
-        /* Gumbi na desnoj strani navigacije */
-        #nav_gumbi {
-            display: flex;
-            justify-content: end;
-            align-items: stretch;
-            flex-wrap: wrap;
-        }
-
-        .nav_gumb {
-            display: flex;
-            align-items: center;
-            padding: 0 1em;
-        }
-
-        .nav_gumb:hover {
-            background-color: #7F5B5F;
-            color: #E4CDA5;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .navigacija {
-                font-size: large;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .navigacija {
-                font-size: medium;
-            }
-
-            .nav_gumb {
-                padding: 0 0.75em
-            }
-
-        }
-
-        /* ---------------------------- TIJELO STRANICE ---------------------------- */
-        header {
-            background-image: url("https://evarazdin.hr/upload/publish/418015/thumb/page-dvorac_6835c0446c649_860x484c.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            height: 35vh;
-            width: 100%;
-        }
-
-        #zatamnjenje {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            vertical-align: middle;
-            color: #F2E3C4;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            background-color: #d8c3a5;            
-        }
-        main article {
-            width: 85%;
-            background-color: #f5e6cc;
-            border: 1px solid #c9a66b;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-            padding: 0 1.5em;
-            padding-bottom: 5%;
-        }
-
-        main article p {
-            color: #3A291A;
-        }
-
-        main article h2 {
-            color: #321f13;
-        }
-
-        table {
-            width: 100%;
-            border: 1px solid #B7926A; 
-            border-collapse: collapse;
-            background-color: #F0E3D0;
-        }
-        table thead {
-            background-color: #C9B097;
-            color: #321f13;
-            text-align: left;
-        }
-        table tbody {
-            color: #3A291A;
-        }
-        tr {
-            border: 1px solid #B7926A; 
-        }
-        
-        .parni_redak {
-            background-color: #E8D7C3;
-        }
-       
-        
-        footer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            background-color: #37241A;
-            color: #E4CDA5;
-            padding: 3em;
-        }
-        footer a {
-            text-decoration: none;
-             color: #E4CDA5;
-        }
-        footer a:hover {
-            color: #D2B07A;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/fperak24.css">
+    <link rel="stylesheet" href="../css/lokaliteti.css">
+    <title>Lokaliteti</title>
 </head>
 
 <body>
@@ -167,18 +16,18 @@
         </div>
 
         <section id="nav_gumbi">
-            <div class="nav_gumb" id="pocetna_gumb">
+            <a class="nav_gumb" id="pocetna_gumb" href="index.html">
                 Početna
-            </div>
-            <div class="nav_gumb" id="lokaliteti_dropdown">
+            </a>
+            <a class="nav_gumb" id="lokaliteti_gumb" href="lokaliteti.html">
                 Lokaliteti
-            </div>
-            <div class="nav_gumb" id="prijedlozi_gumb">
+            </a>
+            <a class="nav_gumb" id="prijedlozi_gumb" href="prijedlozi.html">
                 Prijedlozi
-            </div>
-            <div class="nav_gumb" id="dokumentacija_gumb">
+            </a>
+            <a class="nav_gumb" id="dokumentacija_gumb" href="dokumentacija.html">
                 Dokumentacija
-            </div>
+            </a>
         </section>
     </nav>
     <header>
@@ -190,219 +39,359 @@
     </header>
     <main>
         <article>
-            <h2>Podnaslov 1</h2>
+            <h2>Područja lokaliteta</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras eleifend turpis fames primis vulputate
-            ornare sagittis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Eros lobortis nulla
-            molestie mattis scelerisque maximus eget. Nisl malesuada lacinia integer nunc posuere ut hendrerit.
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula praesent dui
-            felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam. Maximus eget
-            fermentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu. Vitae
-            pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique accumsan
-            maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris pharetra
-            vestibulum fusce. Taciti sociosqu ad litora torquent per conubia nostra. Cursus mi pretium tellus duis
-            convallis tempus leo. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Euismod quam
-            justo lectus commodo augue arcu dignissim. Vestibulum fusce dictum risus blandit quis suspendisse
-            aliquet. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Tempus leo eu aenean sed diam
-            urna tempor. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Arcu dignissim velit
-            aliquam imperdiet mollis nullam volutpat. Suspendisse aliquet nisi sodales consequat magna ante
-            condimentum. Natoque penatibus et magnis dis parturient montes nascetur. Urna tempor pulvinar vivamus
-            fringilla lacus nec metus. Cubilia curae hac habitasse platea dictumst lorem ipsum. Nullam volutpat
-            porttitor ullamcorper rutrum gravida cras eleifend. Ante condimentum neque at luctus nibh finibus
-            facilisis. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Nec metus bibendum egestas iaculis
-            massa nisl malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras eleifend turpis fames
-            primis vulputate ornare sagittis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Eros
-            lobortis nulla molestie mattis scelerisque maximus eget. Nisl malesuada lacinia integer nunc posuere ut
-            hendrerit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
-            praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam. Maximus
-            eget fermentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu. Vitae
-            pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique accumsan
-            maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris pharetra
-            vestibulum fusce. Taciti sociosqu ad litora torquent per conubia nostra. Cursus mi pretium tellus duis
-            convallis tempus leo. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Euismod quam
-            justo lectus commodo augue arcu dignissim. Vestibulum fusce dictum risus blandit quis suspendisse
-            aliquet. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Tempus leo eu aenean sed diam
-            urna tempor. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Arcu dignissim velit
-            imperdiet mollis nullam volutpat. Suspendisse aliquet nisi sodales consequat magna ante
-            condimentum. Natoque penatibus et magnis dis parturient montes nascetur. Urna tempor pulvinar vivamus
-            fringilla lacus nec metus. Cubilia curae hac habitasse platea dictumst lorem ipsum. Nullam volutpat
-            porttitor ullamcorper rutrum gravida cras eleifend. Ante condimentum neque at luctus nibh finibus
-            facilisis. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Nec metus bibendum egestas iaculis
-            massa nisl malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras eleifend turpis fames
-            primis vulputate ornare sagittis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Eros
-            lobortis nulla molestie mattis scelerisque maximus eget. Nisl malesuada lacinia integer nunc posuere ut
-            hendrerit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
-            praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam. Maximus
-            eget fermentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu. Vitae
-            pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique accumsan
-            maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris pharetra
-            vestibulum fusce. Taciti sociosqu ad litora torquent per conubia nostra. Cursus mi pretium tellus duis
-            convallis tempus leo. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Euismod quam
-            justo lectus commodo augue arcu dignissim. Vestibulum fusce dictum risus blandit quis suspendisse
-            aliquet. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Tempus leo eu aenean sed diam
-            urna tempor. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Arcu dignissim velit
-            aliquam imperdiet mollis nullam volutpat. Suspendisse aliquet nisi sodales consequat magna ante
-            condimentum. Natoque penatibus et magnis dis parturient montes nascetur. Urna tempor pulvinar vivamus
-            ringilla lacus nec metus. Cubilia curae hac habitasse platea dictumst lorem ipsum. Nullam volutpat
-            porttitor ullamcorper rutrum gravida cras eleifend. Ante condimentum neque at luctus nibh finibus
-            facilisis. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Nec metus bibendum egestas iaculis
-            massa nisl malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras eleifend turpis fames
-            primis vulputate ornare sagittis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Eros
-            lobortis nulla molestie mattis scelerisque maximus eget. Nisl malesuada lacinia integer nunc posuere ut
-            hendrerit. 
+                Na području sjeverozapadne Hrvatske se nalazi veliko mnoštvo materijalne baštine koja datira unazad
+                stoljećima i pružiti detaljan uvid u sve njih, pa čak i samo u jedan mali dio njih, je zadatak van
+                okvira ovog web mjesta i postoji podosta literature koja je ovaj posao već i obavila. Shodno tome, ovdje
+                sam se odlučio usredotičiti na samo jedan sitni djelić ostavštine ovih prostora te u uskim crtama
+                okvirno opisati pojedine lokalitete i istaknuti najvažnije informacije vezane uz njih. Točan prostor
+                lokaliteta koje sam odlučio ovdje opisati obuhvaća današnje općine Maruševec i Vinicu te grad Novi
+                Marof, a baš njih sam odabrao zbog geografske blizine i činjenice da sam ih imao priliku vidjeti i
+                istražiti iz prve ruke.
+                Stavi tipa da imaš kao po podpodnaslovima nazive područja/općina lokaliteta -> ispod naziva dolazi
+                kratki opis tog područja/općine, gdje je smještena itd. te sam popis lokaliteta u vidu liste (ul), a na
+                kraju stranice se nalazi tablica s popisom lokaliteta.
+                Nadalje, same te sekcije su osmišljene tako da bude tekst s floatanom slikom nekog od lokaliteta ili
+                možda sa slikom općine/krajolika ili što god.
+                PAZI OVO, imaš kao kod svake općine tekst kao opisa općine koji završava s "...", i ima na sebi zaprav
+                poveznicu na sidro tog teksta posebne stranice tog područja; svaki lokalitet ima poveznicu na
+                odgovarajuće sidro na dio za taj lokalitet na stranici općine kojoj pripada.
             </p>
-        <hr>
-        <h2>Podnaslov 2</h2>
-        <p>
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
-            praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam. Maximus
-            eget fermentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu. Vitae
-            pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique accumsan
-            maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris pharetra
-            vestibulum fusce. Taciti sociosqu ad litora torquent per conubia nostra. Cursus mi pretium tellus duis
-            convallis tempus leo. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Euismod quam
-            justo lectus commodo augue arcu dignissim. Vestibulum fusce dictum risus blandit quis suspendisse
-            aliquet. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Tempus leo eu aenean sed diam
-            urna tempor. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Arcu dignissim velit
-            aliquam imperdiet mollis nullam volutpat. Suspendisse aliquet nisi sodales consequat magna ante
-            condimentum. Natoque penatibus et magnis dis parturient montes nascetur. Urna tempor pulvinar vivamus
-            fringilla lacus nec metus. Cubilia curae hac habitasse platea dictumst lorem ipsum. Nullam volutpat
-               porttitor ullamcorper rutrum gravida cras eleifend. Ante condimentum neque at luctus nibh finibus
-                facilisis. Montes nascetur ridiculus mus donec rhoncus eros lobortis. Nec metus bibendum egestas iaculis
-                massa nisl malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Cras eleifend turpis fames
-                primis vulputate ornare sagittis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Eros
-                lobortis nulla molestie mattis scelerisque maximus eget. Nisl malesuada lacinia integer nunc posuere ut
-                hendrerit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
-                praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam. Maximus
-                eget fermentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu. Vitae
-                pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique accumsan
-                maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris pharetra
-                vestibulum fusce. Taciti sociosqu ad litora torquent per conubia nostra. Cursus mi pretium tellus duis
-                convallis tempus leo. Accumsan maecenas potenti ultricies habitant morbi senectus netus. Euismod quam
-                justo lectus commodo augue arcu dignissim. Vestibulum fusce dictum risus blandit quis suspendisse
-                aliquet. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Tempus leo eu aenean sed diam
-                urna tempor. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Arcu dignissim velit
-                aliquam imperdiet mollis nullam volutpat. Suspendisse aliquet nisi sodales consequat magna ante
-                condimentum. Natoque penatibus et magnis dis parturient montes nascetur. Urna tempor pulvinar vivamus
-                fringilla lacus nec metus.
-        </p> <hr>
-        <section>
-            <h2>Tablica</h2>
-            <table>
-                <caption>Popis objekata</caption>
-                <thead>
-                    <tr>
-                        <th>Naziv lokaliteta</th>
-                        <th>Područje</th>
-                        <th>Vrsta objekta</th>
-                        <th>Razdoblje</th>
-                        <th>Stanje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Bajnski dvori </td>
-                        <td> <a href="https://maps.app.goo.gl/PFdmUgcEg6C6JM7x6" target="_blank">Gornje Ladanje </a> </td>
-                        <td> Vrijednost </td>
-                        <td> Vrijednost </td>
-                        <td> Vrijednost </td>
-                    </tr>
-                    <tr class="parni_redak">
-                        <td> Bajnski dvori </td>
-                        <td> <a href="https://maps.app.goo.gl/PFdmUgcEg6C6JM7x6" target="_blank">Gornje Ladanje </a> </td>
-                        <td> Vrijednost </td>
-                        <td> Vrijednost </td>
-                        <td> Vrijednost </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <hr>
-        <h2>Galerija</h2>
-        <div style="
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
-         gap: 1em;
-        ">
-            <div class="galerija_slika" style="
-                grid-column: 1;
-                grid-row: 1;
-                background-color: #D2B07A;
-                padding: 0.5em;
-            ">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" width="100%" height="100%" />  
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 2;
-                grid-row: 1;
-                background-color: #644f2e;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 3;
-                grid-row: 1;
-                background-color: #8d8c8a;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 4;
-                grid-row: 1;
-                background-color: #f1d399;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 1;
-                grid-row: 2;
-                background-color: #D2B07A;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 2;
-                grid-row: 2;
-                background-color: #644f2e;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 3;
-                grid-row: 2;
-                background-color: #8d8c8a;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-            <div class="galerija_slika" style="
-                grid-column: 4;
-                grid-row: 2;
-                background-color: #f1d399;
-                width: 100%;
-                height: 100%;
-            ">
-                a
-            </div>
-        </div>
+            <hr>
+            <section>
+
+                <h3>Općina Maruševec</h3>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" width="250"
+                        style="float: left; margin: 0 1em 0.5em 0;" />
+                    Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... [Pročitaj više]
+                </div>
+                <p style=" font-weight: bold;">
+                    Popis lokaliteta:
+                </p>
+                <ul>
+                    <li>Kurija Čalinec (nemam slike :( 129.)</li>
+                    <li>Dvorac Maruševec (slike na google Photos + knjiga + wiki commons 130.)</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h3>Općina Vinica</h3>
+                <div>
+                    <img src="https://www.varazdinska-zupanija.hr/media/k2/galleries/59/5_dvorac_opeka.JPG" width="250"
+                        style="float: right; margin: 0 0em 0.5em 1em;" />
+                    Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... [Pročitaj više]
+                </div>
+                <p style="font-weight: bold;">
+                    Popis lokaliteta:
+                </p>
+                <ul>
+                    <li>Bajnski Dvori (imam slike)</li>
+                    <li>Stari grad Vinica (imam slike 41)</li>
+                    <li>Kurija Patačić (nemam slike al morem realno se prepelati i poslikati)</li>
+                    <li>Dvorac Opeka</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h3>Novi Marof</h3>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGXfyDSiJ5Yd-YoMebTpiukUZUXjxYjfvpxw&s"
+                        width="250" style="float: left; margin: 0 1em 0.5em 0;" />
+                    Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet
+                    mauris
+                    pharetra
+                    vestibulum fusce... Adipiscing elit quisque faucibus ex sapien vitae pellentesque. Ornare sagittis
+                    vehicula
+                    praesent dui felis venenatis ultrices. Ligula congue sollicitudin erat viverra ac tincidunt nam.
+                    Maximus
+                    eget ferrmentum odio phasellus non purus est. Ut hendrerit semper vel class aptent taciti sociosqu.
+                    Vitae
+                    pellentesque sem placerat in id cursus mi. Venenatis ultrices proin libero feugiat tristique
+                    accumsan
+                    maecenas. Tincidunt nam porta elementum a enim euismod quam. Purus est efficitur laoreet mauris
+                    pharetra
+                    vestibulum fusce... [Pročitaj više]
+                </div>
+                <p style="font-weight: bold;">
+                    Popis lokaliteta:
+                </p>
+                <ul>
+                    <li>Pusta Bela (149.)</li>
+                    <li>Dvorac Bela 1 (stariji)</li>
+                    <li>Dvorac Bela 2 (noviji)</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Tablica lokaliteta</h2>
+                <table>
+                    <caption>Popis lokaliteta</caption>
+                    <thead>
+                        <tr>
+                            <th>Naziv lokaliteta</th>
+                            <th>Područje</th>
+                            <th>Vrsta objekta</th>
+                            <th>Razdoblje</th>
+                            <th>Stanje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="parni_redak">
+                            <td> Kurija Čalinec (129)</td>
+                            <td> <a href="https://maps.app.goo.gl/V1aYp53mnCNQwxpm7" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Kurija </td>
+                            <td> 17. stoljeće </td>
+                            <td> Naseljeno </td>
+                        </tr>
+                        <tr>
+                            <td> Dvorac Maruševec </td>
+                            <td> <a href="https://maps.app.goo.gl/e4A4x4BRERJNU2An8" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Dvorac </td>
+                            <td> 16. stoljeće </td>
+                            <td> Održavano </td>
+                        </tr>
+                        <tr class="parni_redak">
+                            <td> Bajnski dvori </td>
+                            <td> <a href="https://maps.app.goo.gl/PFdmUgcEg6C6JM7x6" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Dvorac </td>
+                            <td> 17. stoljeće </td>
+                            <td> Derutno </td>
+                        </tr>
+                        <tr>
+                            <td> Stari grad Vinica </td>
+                            <td> <a href="https://maps.app.goo.gl/T9qFrx1Xt5Jj8eAa8" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Utvrda </td>
+                            <td> 14. stoljeće </td>
+                            <td> Ruševina </td>
+                        </tr>
+                        <tr class="parni_redak">
+                            <td> Kurija Patačić (vinica) </td>
+                            <td> <a href="https://maps.app.goo.gl/B161zjmBVUBHsqbK9" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Kurija </td>
+                            <td> 17. stoljeće </td>
+                            <td> Nedavno obnovljeno </td>
+                        </tr>
+                        <tr>
+                            <td> Dvorac Opeka </td>
+                            <td> <a href="https://maps.app.goo.gl/NGLiYTAutrZa1SSR9" target="_blank">Gornje Ladanje </a>
+                            </td>
+                            <td> Dvorac </td>
+                            <td> 18. stoljeće </td>
+                            <td> Nedavno obnovljeno </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <h2>Galerija</h2>
+            <section class="galerija">
+                <div class="galerija_slika">
+                    <a href="https://hr.wikipedia.org/wiki/Dvorac_Maru%C5%A1evec">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+                <div class="galerija_slika">
+                    <a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG" />
+                    </a>
+                </div>
+            </section>
         </article>
     </main>
 
     <footer>
         <p>
-            <a href="https://creativecommons.org/public-domain/cc0/" target="_blank">&copy</a> 2026 Dvorci i kurije sjeverozapadne Hrvatske | Kontakt: <a href="mailto:fperak24@student.foi.hr"> fperak24@student.foi.hr </a>
+            <a href="https://creativecommons.org/public-domain/cc0/" target="_blank">&copy</a> 2026 Dvorci i kurije
+            sjeverozapadne Hrvatske | Kontakt: <a href="mailto:fperak24@student.foi.hr"> fperak24@student.foi.hr </a>
         </p>
         <p>
             <a href="./dokumentacija.html">Dokumentacija</a>
