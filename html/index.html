@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fperak24.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/fperak24.js"></script>
     <title>Početna stranica</title>
 </head>
 
@@ -15,12 +16,21 @@
             Dvorci sjeverozapadne Hrvatske
         </div>
 
-        <section id="nav_gumbi">
+        <div id="nav_gumbi">
             <a class="nav_gumb" id="pocetna_gumb" href="index.html">
                 Početna
             </a>
             <a class="nav_gumb" id="lokaliteti_gumb" href="lokaliteti.html">
                 Lokaliteti
+            </a>
+            <a class="nav_gumb" id="marusevec_gumb" href="opcina_marusevec.html">
+                Maruševec
+            </a>
+            <a class="nav_gumb" id="vinica_gumb" href="opcina_vinica.html">
+                Vinica
+            </a>
+            <a class="nav_gumb" id="novi_marof_gumb" href="novi_marof.html">
+                Novi Marof
             </a>
             <a class="nav_gumb" id="prijedlozi_gumb" href="prijedlozi.html">
                 Prijedlozi
@@ -28,7 +38,7 @@
             <a class="nav_gumb" id="dokumentacija_gumb" href="dokumentacija.html">
                 Dokumentacija
             </a>
-        </section>
+        </div>
     </nav>
     <header>
         <div id="zatamnjenje">
@@ -103,8 +113,15 @@
             <hr>
             <section>
                 <h2>Tablica lokaliteta</h2>
-                <table>
+                <table id="tablica_lokaliteta">
                     <caption>Popis lokaliteta</caption>
+                    <colgroup>
+                        <col class="stupac_25_sirina">
+                        <col class="stupac_20_sirina">
+                        <col class="stupac_15_sirina">
+                        <col class="stupac_15_sirina">
+                        <col class="stupac_25_sirina">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th>Naziv lokaliteta</th>
@@ -115,24 +132,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="parni_redak">
-                            <td> Kurija Čalinec</td>
+                        <tr>
+                            <td><a href="opcina_marusevec.html#kurija_calinec">Kurija Čalinec</a></td>
                             <td> <a href="https://maps.app.goo.gl/V1aYp53mnCNQwxpm7" target="_blank"> Čalinec </a>
                             </td>
                             <td> Kurija </td>
                             <td> 17. stoljeće </td>
                             <td> Naseljeno </td>
                         </tr>
-                        <tr>
-                            <td> Dvorac Maruševec </td>
+                        <tr class="parni_redak">
+                            <td><a href="opcina_marusevec.html#dvorac_marusevec">Dvorac Maruševec</a></td>
                             <td> <a href="https://maps.app.goo.gl/e4A4x4BRERJNU2An8" target="_blank"> Maruševec </a>
                             </td>
                             <td> Dvorac </td>
                             <td> 16. stoljeće </td>
                             <td> Održavano </td>
                         </tr>
-                        <tr class="parni_redak">
-                            <td> Bajnski dvori </td>
+                        <tr>
+                            <td> <a href="opcina_vinica.html#bajnski_dvori">Bajnski dvori</a> </td>
                             <td> <a href="https://maps.app.goo.gl/PFdmUgcEg6C6JM7x6" target="_blank"> Gornje Ladanje
                                 </a>
                             </td>
@@ -141,7 +158,7 @@
                             <td> Derutno </td>
                         </tr>
                         <tr class="parni_redak">
-                            <td> Stari grad Vinica</td>
+                            <td><a href="opcina_vinica.html#stari_grad_vinica">Stari grad Vinica</a></td>
                             <td> <a href="https://maps.app.goo.gl/ud2izvx6SJu47ane6" target="_blank"> Vinica </a>
                             </td>
                             <td> Utvrda </td>
@@ -149,15 +166,15 @@
                             <td> Ruševina </td>
                         </tr>
                         <tr>
-                            <td> Dvorac Opeka </td>
+                            <td> <a href="opcina_vinica.html#dvorac_opeka">Dvorac Opeka</a> </td>
                             <td> <a href="https://maps.app.goo.gl/NGLiYTAutrZa1SSR9" target="_blank"> Marčan </a>
                             </td>
                             <td> Dvorac </td>
                             <td> 18. stoljeće </td>
                             <td> Nedavno obnovljeno </td>
                         </tr>
-                        <tr>
-                            <td> Pusta Bela </td>
+                        <tr class="parni_redak">
+                            <td><a href="novi_marof.html#pusta_bela">Pusta Bela </a></td>
                             <td> <a href="https://maps.app.goo.gl/VZ4MBVwkC6YBSzkw5" target="_blank"> Bela </a>
                             </td>
                             <td> Utvrda </td>
@@ -165,15 +182,15 @@
                             <td> Ruševina </td>
                         </tr>
                         <tr>
-                            <td> Dvorac Bela I </td>
+                            <td><a href="novi_marof.html#dvorac_bela_1"> Dvorac Bela I </a></td>
                             <td> <a href="https://maps.app.goo.gl/8pW6hzuUYb8drTNZ6" target="_blank"> Bela </a>
                             </td>
                             <td> Dvorac </td>
                             <td> 16. stoljeće </td>
                             <td> Derutno </td>
                         </tr>
-                        <tr>
-                            <td> Dvorac Bela II </td>
+                        <tr class="parni_redak">
+                            <td><a href="novi_marof.html#dvorac_bela_2"> Dvorac Bela II </a></td>
                             <td> <a href="https://maps.app.goo.gl/6KD5oUsugDT6SENx9" target="_blank"> Bela </a>
                             </td>
                             <td> Dvorac </td>
@@ -181,75 +198,84 @@
                             <td> Dobro </td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                Ukupno lokaliteta: 8
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </section>
             <hr>
             <h2>Galerija</h2>
-            <section class="galerija">
+            <div id="interaktivna_galerija" class="galerija">
                 <div class="galerija_slika">
                     <a href="opcina_marusevec.html#kurija_calinec">
                         <img src="https://www.terra-croatia.eu/wp-content/uploads/2021/09/2-Calinec.jpg"
-                            alt="Slika kurije Čalinec" />
+                            alt="Slika kurije Čalinec">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="opcina_marusevec.html#dvorac_marusevec">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Dvorac_Marusevec3.JPG"
-                            alt="Slika dvorca Maruševec" />
+                            alt="Slika dvorca Maruševec">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="opcina_marusevec.html#dvorac_marusevec">
                         <img src="https://img1.advisor.travel/1314x680px-Marusevec_Castle_4.jpg"
-                            alt="Slika dvorca Maruševec" />
+                            alt="Slika dvorca Maruševec">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="opcina_vinica.html#bajnski_dvori">
                         <img src="https://github.com/fperak24/OWT_zadaca_slike/blob/main/Bajnski_dvori-Dvorac.jpg?raw=true"
-                            alt="Slika Bajnskih Dvora" />
+                            alt="Slika Bajnskih Dvora">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="opcina_vinica.html#bajnski_dvori">
                         <img src="https://github.com/fperak24/OWT_zadaca_slike/blob/main/Bajnski_dvori-kompleks.jpg?raw=true"
-                            alt="Slika kompleksa Bajnskih Dvora" />
+                            alt="Slika kompleksa Bajnskih Dvora">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="opcina_vinica.html#dvorac_opeka">
                         <img src="https://visitnorthcroatia.com/wp-content/uploads/2024/11/IMG_2221-scaled.jpg"
-                            alt="Slika dvorca Opeka" />
+                            alt="Slika dvorca Opeka">
                     </a>
                 </div>
 
                 <div class="galerija_slika">
                     <a href="novi_marof.html#dvorac_bela_1">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS94x7Vg6qgQ6pFbAmHmgQiLMXmBIbmRsmfww&s"
-                            alt="Slika dvorca Bela I" />
+                            alt="Slika dvorca Bela I">
                     </a>
                 </div>
                 <div class="galerija_slika">
                     <a href="novi_marof.html#dvorac_bela_2">
                         <img src="https://github.com/fperak24/OWT_zadaca_slike/blob/main/Bela.jpg?raw=true"
-                            alt="Slika dvorca Bela II" />
+                            alt="Slika dvorca Bela II">
                     </a>
                 </div>
 
-            </section>
+            </div>
         </article>
     </main>
 
     <footer>
         <p>
-            <a href="https://creativecommons.org/public-domain/cc0/" target="_blank">&copy</a> 2026 Dvorci i kurije
+            <a href="https://creativecommons.org/public-domain/cc0/" target="_blank">&copy;</a> 2026 Dvorci i kurije
             sjeverozapadne Hrvatske | Kontakt: <a href="mailto:fperak24@student.foi.hr"> fperak24@student.foi.hr </a>
         </p>
         <p>
             <a href="./dokumentacija.html">Dokumentacija</a>
+            <a href="http://validator.w3.org/check?uri={uri}">
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="Slika validatora">
+            </a>
         </p>
     </footer>
-
 </body>
 
 </html>

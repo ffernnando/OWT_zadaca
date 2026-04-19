@@ -157,6 +157,15 @@ main {
   background-color: #d8c3a5;
 }
 
+main a {
+  color: #3A291A;
+}
+
+main a:hover {
+  color: #D2B07A;
+}
+
+
 main article {
   width: 85%;
   background-color: #f5e6cc;
@@ -175,6 +184,18 @@ article h2 {
 }
 
 /* --------------------------- TABLICA --------------------------- */
+
+.stupac_25_sirina {
+  width: 25%;
+}
+
+.stupac_20_sirina {
+  width: 20%;
+}
+
+.stupac_15_sirina {
+  width: 15%;
+}
 
 table {
   width: 100%;
@@ -203,10 +224,11 @@ td {
 }
 
 
-
-
-
 /* ---------------------------- PODNOŽJE/FOOTER ---------------------------- */
+footer img {
+  width: 2.5vw;
+}
+
 footer {
   display: flex;
   flex-direction: column;
